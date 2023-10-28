@@ -25,6 +25,13 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <receiver
+            android:name=".MyBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.APP1_ACTION" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
