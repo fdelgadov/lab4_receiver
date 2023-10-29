@@ -9,6 +9,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         String mensaje = intent.getStringExtra("key");
-        Log.d("MyBroadcastReceiver", "Mensaje recivido: " + mensaje);
+        Log.d("MyBroadcastReceiver", "Mensaje recibido: " + mensaje);
     }
 }

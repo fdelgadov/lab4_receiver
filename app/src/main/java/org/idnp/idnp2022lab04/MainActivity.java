@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
-    final private String TAG = "MainActivity";
+    final private String TAG = "App1";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +19,9 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(mbr, filter);
 
         Intent intent = new Intent("com.example.APP1_ACTION");
-        intent.putExtra("key", "value"); // Puedes poner datos extras si es necesario
+        intent.putExtra("key", "App1"); // Puedes poner datos extras si es necesario
 
         sendBroadcast(intent);
         Log.d(TAG, "Mensaje enviado");
-
     }
 }
